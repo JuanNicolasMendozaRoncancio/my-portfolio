@@ -1,26 +1,56 @@
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  background-color:#fff;
 }
 
 /* Navigation Bar */
 
 #home {
-  background-color:  #7600bc;
-  padding-bottom: 1cm;
-  margin-left:-1cm;
-  margin-right:-1cm;
-  margin-top:-1cm;
-  padding-top: 2cm;
-  padding-bottom: 2cm;
-  height: 5mm;
- }
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: space-between; /* izquierda/derecha */
+  align-items: center; /* centra verticalmente todo el bloque */
+  padding: 1cm 2cm;
+  margin: -0.5cm;
+  color: white;
+}
+
+/* Bloque de nombre y contactos */
+.profile_name {
+  display: flex;
+  flex-direction: column; /* nombre arriba, contactos abajo */
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.profile_name .contact_info {
+  display: flex;
+  align-items: center; /* alinea ícono y texto */
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+.contact_info img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* Menú de la derecha */
+.topdiv {
+  display: flex;
+  align-items: center; /* alinea con el centro del bloque de contacto */
+  gap: 25px; /* espacio entre los links */
+}
 
 .topmenu {
   color: lightgray;
-  margin: 10px;
-  padding: 20px;
   font-size: 20px;
-  text-decoration:none;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .topmenu:hover {
@@ -29,32 +59,6 @@ body {
   text-decoration: underline;
 }
 
-.topdiv {
-  float: right;
-  padding-right: 1cm;
-}
-
-.profile_name {
-  float: left;
-  padding-left: 2cm;
-  color: white;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.profile_name .contact_info {
-  font-size: 15px;
-  font-style: italic;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-
-.contact_info img {
-  width:25px;
-  margin-right: 10px;
-  float:left;
-}
 
 /* Titles */
 
