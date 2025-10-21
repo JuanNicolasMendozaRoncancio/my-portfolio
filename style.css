@@ -31,6 +31,20 @@ body {
   color: #f0f0f0; /* ligero brillo */
 }
 
+.github_link {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  transition: all 0.3s ease;
+}
+
+.github_link:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+
 /* Bloque de nombre y contactos */
 .profile_name {
   display: flex;
@@ -299,7 +313,7 @@ h2 {
 #contact h2 {
   font-size: 36px;
   margin-bottom: 30px;
-  color: #222;
+  color: #7600bc;
 }
 
 #contact form {
