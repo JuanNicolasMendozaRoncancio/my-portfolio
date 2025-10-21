@@ -1,31 +1,31 @@
-function addRecommendation() {
-  // Get the message of the new recommendation
-  let recommendation = document.getElementById("new_recommendation");
-  // If the user has left a recommendation, display a pop-up
-  if (recommendation.value != null && recommendation.value.trim() != "") {
-    console.log("New recommendation added");
-    //Call showPopup here
-    showPopup(true);
-    // After 2 seconds, hide the pop-up
-    setTimeout(function() {
-      showPopup(false);
-    }, 2000);
-    // Create a new 'recommendation' element and set it's value to the user's message
-    var element = document.createElement("div");
-    element.setAttribute("class","recommendation");
-    element.innerHTML = "\<span\>&#8220;\</span\>" + recommendation.value + "\<span\>&#8221;\</span\>";
-    // Add this element to the end of the list of recommendations
-    document.getElementById("all_recommendations").appendChild(element); 
-    
-    // Reset the value of the textarea
-    recommendation.value = "";
-  }
+function sendEmail(event) {
+  event.preventDefault(); // Evita recargar la página
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const subject = document.getElementById("subject").value;
+  const message = document.getElementById("message").value;
+
+  // Esto abre el cliente de correo predeterminado
+  const mailtoLink = `mailto:juannicolasmendoza4@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+    `Name: ${name}\nEmail: ${email}\n\n${message}`
+  )}`;
+
+  window.location.href = mailtoLink;
+
+  // Muestra el popup de confirmación
+  showPopup(true);
+
+  // Oculta el popup después de 3 segundos
+  setTimeout(() => {
+    showPopup(false);
+  }, 3000);
+
+  // Limpia el formulario
+  document.getElementById("contact-form").reset();
 }
 
 function showPopup(bool) {
-  if (bool) {
-    document.getElementById('popup').style.visibility = 'visible'
-  } else {
-    document.getElementById('popup').style.visibility = 'hidden'
-  }
+  const popup = document.getElementById("popup");
+  popup.style.visibility = bool ? "visible" : "hidden";
 }
