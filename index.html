@@ -6,16 +6,23 @@
     <link rel="stylesheet" href="./style.css"/>
     <script src="./script.js"></script>
   </head>
+
+
+
   <body>
     <!-- Navigation Bar -->
     <nav>
       <div id="home">
         <div class="profile_name">
           Juan Nicolas Mendoza Roncancio
-          <div class="contact_info">
-            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          juannicolasmendoza4@gmail.com
+
+        <div class="contact_info">
+          <img src="html_finalprojimages/envelope.png" alt="Email icon" />
+          <a href="mailto:juannicolasmendoza4@gmail.com" class="email_link">
+            juannicolasmendoza4@gmail.com
+          </a>
         </div>
+
         <div style="clear:both;"></div>
         <div class="contact_info">
           <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
@@ -24,13 +31,16 @@
         </div>
         <div class="topdiv">
           <a class="topmenu" href="#about-me">About Me</a>
-          <a class="topmenu" href="#skills">Skills</a>
           <a class="topmenu" href="#projects">Projects</a>
+          <!-- <a class="topmenu" href="#experience">Experience</a> -->
+          <a class="topmenu" href="#skills">Skills</a>
           <a class="topmenu" href="#recommendations">Recommendations</a>
 
         </div>
       </div>    
     </nav>
+
+
 
     <!-- About Me -->
     <section id="about-me" class="container">
@@ -51,6 +61,64 @@
       </div>
     </section>
               
+
+
+
+
+<!-- Projects -->
+<section class="projects" id="projects">
+  <h2>Projects</h2>
+  <div style="clear:both;"></div>
+
+  <div id="projects-container" class="projects-container">
+
+    <div class="project-card">
+      <a href="https://github.com/tuusuario/ChatBot-Colombian-Conflict" target="_blank" class="project-link">
+        <h3>ChatBot on Colombian Armed Conflict</h3>
+      </a>
+      <p>
+        Developed a <strong>ChatBot</strong> trained on <strong>940 testimonies</strong> from the Colombian armed conflict using 
+        <strong>Python, Keras, Pandas, and PyTorch</strong>. Designed <strong>neural network architectures</strong> such as 
+        <strong>SimpleRNN, LSTM, and GRU</strong> for <strong>natural language processing</strong>. 
+        Applied <strong>language preprocessing techniques</strong> and <strong>hyperparameter optimization</strong> 
+        to improve model performance.
+      </p>
+    </div>
+
+    <hr>
+
+    <div class="project-card">
+      <a href="https://github.com/tuusuario/Sentiment-Climate-Change" target="_blank" class="project-link">
+        <h3>Sentiment Analysis on Climate Change</h3>
+      </a>
+      <p>
+        Analyzed a dataset of <strong>9,050 tweets</strong> about climate change using <strong>Python</strong>. 
+        Performed <strong>sentiment analysis</strong> with the <strong>LDA algorithm</strong> and <strong>hyperparameter search</strong> 
+        to identify <strong>six distinct topics</strong>. 
+        Evaluated sentiment correlations, obtaining <strong>r² values between 0.589 and 0.8941</strong>.
+      </p>
+    </div>
+
+    <hr>
+
+    <div class="project-card">
+      <a href="https://github.com/tuusuario/Generative-Education-Model" target="_blank" class="project-link">
+        <h3>Generative Model for Educational Resources</h3>
+      </a>
+      <p>
+        Designed a <strong>BitNet-type generative model</strong> aimed at producing <strong>educational materials and study guides</strong>. 
+        This project explored <strong>AI-driven content generation</strong> techniques for improving access to personalized learning resources.
+      </p>
+    </div>
+
+  </div>
+</section>
+<div style="clear:both;"></div>
+
+
+
+
+
     <!-- Skills -->
     <section id="skills">
       <h2>Skills</h2>
@@ -89,9 +157,10 @@
 
 
     </section>
-          
-    <!-- Projects -->
-    <section class="projects" id="projects">
+
+
+
+    <!-- <section class="projects" id="projects">
       <h2>
         Projects
       </h2>
@@ -125,7 +194,11 @@
           </div>
     </div>
     </section>
-    <div style="clear:both;"></div>
+    <div style="clear:both;"></div> -->
+
+
+          
+    
 
     <!-- Recommendations -->
     <section id="recommendations">
@@ -154,6 +227,9 @@
         </div>
       </div>
     </section>
+
+
+
 
     <!-- Recommendation Form -->
     <section id="contact">

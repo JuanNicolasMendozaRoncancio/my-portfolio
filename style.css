@@ -16,6 +16,22 @@ body {
   color: white;
 }
 
+/* Estilo del enlace del correo */
+.email_link {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el cursor */
+.email_link:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #f0f0f0; /* ligero brillo */
+}
+
+
 /* Bloque de nombre y contactos */
 .profile_name {
   display: flex;
@@ -182,14 +198,24 @@ h2 {
   padding-bottom: 5px;
 }
 
+
 .project-card h3 {
   font-size: 25px;
   margin-left: 30px;
+  margin-bottom: 8px;
 }
 
-.project-card li {
-  font-size: 20px;
-  margin-left: 30px;
+.project-link {
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  color: #2575fc; /* tono azul elegante */
+  font-weight: bold;
+  text-decoration: underline;
+  transform: translateY(-2px);
 }
 
 /* Recommendations */
