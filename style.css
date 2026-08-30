@@ -67,12 +67,15 @@ code {
   font-size: 14px;
   letter-spacing: 0.1em;
   color: var(--accent);
+  white-space: nowrap;       
+  flex-shrink: 0;           
 }
 
 .nav-links {
   display: flex;
-  gap: 28px;
+  gap: 16px;                 
   align-items: center;
+  flex-wrap: nowrap;         
 }
 
 .nav-links a {
@@ -81,6 +84,7 @@ code {
   font-weight: 500;
   letter-spacing: 0.02em;
   transition: color 0.15s;
+  white-space: nowrap;       
 }
 
 .nav-links a:hover { color: var(--text); }
