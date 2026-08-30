@@ -1,304 +1,432 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan Nicolás Mendoza Roncancio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <title>Juan Nicolas Mendoza Roncancio - Portfolio</title>
-    <meta charset="UTF-8"/>
-    <link rel="stylesheet" href="./style.css"/>
-    <script src="./script.js"></script>
-  </head>
-
-
-
-  <body>
-    <!-- Navigation Bar -->
-    <nav>
-      <div id="home">
-        <div class="profile_name">
-          Juan Nicolas Mendoza Roncancio
-
-        <div class="contact_info">
-          <img src="html_finalprojimages/envelope.png" alt="Email icon" />
-          <a href="mailto:juannicolasmendoza4@gmail.com" class="email_link">
-            juannicolasmendoza4@gmail.com
-          </a>
-        </div>
-
-        <div style="clear:both;"></div>
-        <div class="contact_info">
-          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          +33 07 45 21 97 83, +57 300 5063667
-        </div>
-
-
-        <div class="contact_info">
-          <img src="html_finalprojimages/GitHUb.png" alt="GitHub icon" />
-          <a href="https://github.com/JuanNicolasMendozaRoncancio" class="github_link" target="_blank">
-            My GitHub
-          </a>
-        </div>
-
-
-        </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
-          <a class="topmenu" href="#projects">Projects</a>
-          <a class="topmenu" href="#experience">Experience</a>
-          <a class="topmenu" href="#education">Education</a>
-          <a class="topmenu" href="#skills">Skills</a>
-          <a class="topmenu" href="#contact">Contact</a>
-          <a href="https://github.com/JuanNicolasMendozaRoncancio/my-portfolio/tree/main/CVs" class="topmenu" target="_blank">My CVs</a>
-
-        </div>
-      </div>    
-    </nav>
-
-
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmdhNXN6NmUzejYzZmd1dHVyc3A1N2x5dHB3cG45OHdkaDljZ2I0YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3gSd4IfkC0jBJ2rjNe/giphy.gif" class="profile_image"/>
+  <!-- ── NAV ────────────────────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <span class="nav-name">JNMR</span>
+      <div class="nav-links">
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="CVs/CV_JuanNicolasMendozaRoncancioEN.pdf" download class="nav-cv">Download CV</a>
       </div>
+    </div>
+  </nav>
 
-      <div>
-          <h1>
-            Hi, I'm Juan Nicolas! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
-          </h1>
-          <p>
-            I am an <strong>Msc in Engineering Student at Mines Paris - PSL</strong>, specializing in <strong>Applied Marths, AI, machine learning and deep learning</strong>. 
-            Experienced in <strong>Python, SQL, PyTorch, Git</strong> with hands-on experience in <strong>AI model deployment</strong>. 
-            Recognized for <strong>teamwork</strong> and <strong>adaptability</strong>. 
-            I am currently seeking a <strong>4–6 month international internship starting May 2026</strong> in <strong>data and artificial intelligence</strong> in France or internationally.
-          </p>
-      </div>
-    </section>
-              
-
-
-  <!-- Projects -->
-  <section class="projects" id="projects">
-    <h2>Projects</h2>
-    <div style="clear:both;"></div>
-
-    <div id="projects-container" class="projects-container">
-
-      <div class="project-card">
-        <a href="https://github.com/JuanNicolasMendozaRoncancio/my-portfolio/blob/main/Pojects/chatbot_colombian_armed_conlfict.py" target="_blank" class="project-link">
-          <h3>ChatBot on Colombian Armed Conflict</h3>
-        </a>
-        <p>
-          Developed a <strong>ChatBot</strong> trained on <strong>940 testimonies</strong> from the Colombian armed conflict using 
-          <strong>Python, Keras, Pandas, and PyTorch</strong>. Designed <strong>neural network architectures</strong> such as 
-          <strong>SimpleRNN, LSTM, and GRU</strong> for <strong>natural language processing</strong>. 
-          Applied <strong>language preprocessing techniques</strong> and <strong>hyperparameter optimization</strong> 
-          to improve model performance.
+  <!-- ── HERO / ABOUT ───────────────────────────────────────────── -->
+  <section id="about" class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Data &amp; AI Engineer Student at <strong>Mines Paris - PSL</strong> &amp; </strong>Sorbonne Université</strong></p>
+        <h1 class="hero-name">Juan Nicolás<br/>Mendoza Roncancio</h1>
+        <p class="hero-bio">
+          <strong>Msc in Engineering Student at Mines Paris - PSL and Msc in Statiscs, Data Sciene and IA at Sorbonne Université</strong>. Experienced
+          in <strong>Python, PyTorch, SQL, Git</strong> with experience in AI <strong>model deployment and integration</strong>. Recognized for teamwork and adaptability.
+          Seeking a <strong>5-6 month internship starting April 2027</strong> in data and artificial intelligence in France or internationally.
         </p>
+        <div class="hero-contacts">
+          <a href="mailto:juannicolasmendoza4@gmail.com">juannicolasmendoza4@gmail.com</a>
+          <span class="sep">·</span>
+          <a href="https://github.com/JuanNicolasMendozaRoncancio" target="_blank">GitHub</a>
+          <span class="sep">·</span>
+          <span>+33 07 45 21 97 83</span>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <hr>
+  <!-- ── EXPERIENCE ─────────────────────────────────────────────── -->
+  <section id="experience" class="section section--alt">
+    <div class="section-inner">
+      <h2 class="section-title">Experience</h2>
 
-      <div class="project-card">
-        <a href="https://github.com/tuusuario/Sentiment-Climate-Change" target="_blank" class="project-link">
-          <h3>Sentiment Analysis on Climate Change</h3>
-        </a>
-        <p>
-          Analyzed a dataset of <strong>9,050 tweets</strong> about climate change using <strong>Python</strong>. 
-          Performed <strong>sentiment analysis</strong> with the <strong>LDA algorithm</strong> and <strong>hyperparameter search</strong> 
-          to identify <strong>six distinct topics</strong>. 
-          Evaluated sentiment correlations, obtaining <strong>r² values between 0.589 and 0.8941</strong>.
+      <!-- 1. New experience – full Lorem Ipsum placeholder -->
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <p class="card-eyebrow">ML Research Engineer · May 2026 - September 2026</p>
+            <h3 class="card-title">Clustering of Medical Images.</h3>
+            <p class="card-org">Center of Applied Mathematics of Mines - Paris · Sophia Antipolis, France</p>
+          </div>
+        </div>
+        <ul class="card-bullets">
+          <li><strong>Developed novel distributional clustering algorithms for medical image analysis</strong>, reducing computational cost by <strong>90% through GPU-accelerated implementations at scale</strong>.</li>
+          <li>Designed a <strong>medical image classification architecture</strong> combining distributional clustering with <strong>latent-space embeddings</strong>, achieving <strong>0.95 accuracy using only 20% of the training data</strong> required by <strong>conventional CNN-based approaches</strong>.</li>
+          <li>Optimized model performance through a <strong>systematic grid search over training set size and embedding model</strong> selection, identifying configurations that maximized accuracy under data-constrained scenarios.</strong>.</li>
+          <li><strong>Migrated clustering and classification models to GPU</strong>, enabling large-scale experimentation and <strong>reducing iteration time by 100x across the full hyperparameter search</strong>.</strong></li>
+        </ul>
+        <div class="card-stack">
+          <span>Python</span><span>NumPy / SciPy</span><span>scikit-learn</span><span>HuggingFace Transformers</span>
+          <span>PyTorch</span><span>CUDA / GPU computing</span>
+        </div>
+      </article>
+
+      <!-- 2. Convex Clustering – Open Source Research -->
+      <article class="card card--featured">
+        <div class="card-header">
+          <div>
+            <p class="card-eyebrow">ML Engineer · March 2025 – May 2026</p>
+            <h3 class="card-title">Convex Clustering — Open-Source Library</h3>
+            <p class="card-org">Mathematics Department, Universidad de los Andes · Bogotá, Colombia</p>
+          </div>
+          <div class="card-links">
+            <a href="https://convex-clustering-jnmr.streamlit.app" target="_blank" class="badge badge--live">Live Dashboard ↗</a>
+            <a href="https://juannicolasmendozaroncancio.github.io/Convex-Clustering/" target="_blank" class="badge badge--api">Docs ↗</a>
+          </div>
+        </div>
+        <p class="card-desc">
+          <strong>Implementation of Linear Boosting algorithms applied to data clustering</strong> within the Mathematics Department of Universidad de los Anfes.
         </p>
-      </div>
+        <ul class="card-bullets">
+          <li><strong>Implemented seven algorithms for convex clustering</strong> behind a <strong>unified scikit-learn-compatible</strong> <code>ConvexClusterer</code> estimator</li>
+          <li><strong>REST API and Streamlit dashboard</strong> with animated fusion trajectory and weight graph visualization.</li>
+          <li><strong>CI/CD with three parallel GitHub Actions</strong> jobs; <strong>MLflow experiment tracking with S3 artifact storage</strong>.</li>
+          <li>Applied to <strong>RFM customer segmentation</strong> achieving <strong>Silhouette score of 0.491–0.540 across four dimensionality strategies.</strong></li>
+        </ul>
+        <div class="card-stack">
+          <span>Python</span><span>NumPy / SciPy</span><span>scikit-learn</span><span>FastAPI</span>
+          <span>Streamlit</span><span>MLflow</span><span>AWS S3</span><span>GitHub Actions</span>
+        </div>
+      </article>
 
-      <hr>
+      <!-- 3. Medical Image Classification – MindLab -->
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <p class="card-eyebrow">ML Engineer · March 2024 – June 2025</p>
+            <h3 class="card-title">Medical Image Classification</h3>
+            <p class="card-org">MindLab Research Group · Bogotá, Colombia</p>
+          </div>
+        </div>
+        <ul class="card-bullets">
+          <li><strong>Developed medical image classification models</strong> in Python using KDM, achieving <strong>0.95 accuracy comparable to standard CNNs.</strong></li>
+          <li><strong>Deployed models on cloud servers with integration to Hugging Face</strong> for <strong>LLM-based medical image classification</strong> experiments,
+          reaching <strong>0.98 accuracy</strong> with models such as MedGeamma.</li>
+        </ul>
+        <div class="card-stack">
+          <span>Python</span><span>PyTorch</span><span>HuggingFace</span><span>Cloud Deployment</span><span>LLMs</span>
+        </div>
+      </article>
 
-      <div class="project-card">
-        <a href="https://github.com/tuusuario/Generative-Education-Model" target="_blank" class="project-link">
-          <h3>Generative Model for Educational Resources</h3>
-        </a>
-        <p>
-          Designed a <strong>BitNet-type generative model</strong> aimed at producing <strong>educational materials and study guides</strong>. 
-          This project explored <strong>AI-driven content generation</strong> techniques for improving access to personalized learning resources.
-        </p>
-      </div>
+      <!-- 4. Data Analyst – Energy Efficiency -->
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <p class="card-eyebrow">Data Analyst · March 2022 – October 2022</p>
+            <h3 class="card-title">Energy Efficiency — Data Analysis</h3>
+            <p class="card-org">Universidad Nacional de Colombia · Bogotá, Colombia</p>
+          </div>
+        </div>
+        <ul class="card-bullets">
+          <li><strong>Collection and analysis of data on over 500 high-consumption household</strong> appliances, identifying key energy efficiency trends.</li>
+          <li>Performed <strong>data cleaning and preprocessing</strong> achieving a <strong>95% improvement rate</strong>.</li>
+          <li><strong>Developed decision criteria</strong> and presented recommendations that enabled a <strong>20% improvement in energy efficiency and a 15% reduction in consumption</strong>.</li>
+        </ul>
+        <div class="card-stack">
+          <span>Python</span><span>SQL</span><span>Data Analysis</span><span>Data Cleaning</span>
+        </div>
+      </article>
 
     </div>
   </section>
-  <div style="clear:both;"></div>
 
+  <!-- ── PROJECTS ───────────────────────────────────────────────── -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Projects</h2>
 
-
-  <section class="experience" id="experience">
-    <h2>Experience</h2>
-    <div style="clear:both;"></div>
-
-    <div id="experience-container" class="experience-container">
-      
-      <div class="experience-card">
-        <h3>Research Assistant – MindLab Research Group</h3>
-        <p>
-          Developed <strong>medical image classification models</strong> using <strong>Python</strong> and <strong>KDM</strong>, 
-          achieving <strong>0.95 accuracy</strong> comparable to standard CNNs. 
-          Deployed models on <strong>cloud servers</strong> with integration to <strong>Hugging Face</strong> for medical image classification using <strong>LLMs</strong>, 
-          reaching <strong>0.98 accuracy</strong> with models like <strong>MedGeamma</strong>.
+      <!-- Multi-Agent Climate System -->
+      <article class="card card--featured">
+        <div class="card-header">
+          <div>
+            <p class="card-eyebrow">LangGraph · FastAPI · Redis · PostgreSQL · Docker · Cloud Run</p>
+            <h3 class="card-title">Climate &amp; Energy Multi-Agent System</h3>
+          </div>
+          <div class="card-links">
+            <a href="https://agent-system-kzkhzpezphegbt5mnrmtgp.streamlit.app" target="_blank" class="badge badge--live">Live Dashboard ↗</a>
+            <a href="https://climate-agents-api-1049167521127.europe-central2.run.app" target="_blank" class="badge badge--api">API ↗</a>
+          </div>
+        </div>
+       <p class="card-desc">
+          <strong>Producer-Consumer multi-agent system</strong> for monitoring European energy markets and climate data.
+          System 1 (Producer) ingests ENTSO-E and Copernicus ERA5 data, runs a <strong>full data quality and root cause analysis pipeline</strong>, and publishes results via Redis pub/sub.
+          System 2 (Consumer) runs <strong>trend analysis</strong>, computes a composite energy risk score across four components, and <strong>generates a natural-language narrative</strong> streamed live via Server-Sent Events.
         </p>
-        <p><em>March 2024 – Present | Bogotá, Colombia</em></p>
-      </div>
+        <ul class="card-bullets">
+          <li><strong>8-agent LangGraph pipeline</strong> (Ingestion → Profiling → QA → RCA → Reporter → Analysis → Visualization → Narrative) <strong>deployed to Google Cloud Run</strong></li>
+          <li><strong>KL-divergence drift detection</strong> (scipy) with same day-of-week historical baseline; YAML-driven business rule validation</li>
+          <li><strong>Dead Letter Queue with exponential backoff</strong>; <strong>LangSmith full-trace observability</strong> with zero agent-code modification</li>
+          <li><strong>CI/CD via GitHub Actions</strong> (ruff lint · mocked unit tests · live API connectivity); Groq primary LLM with automatic fallback to second model</li>
+        </ul>
+        <div class="card-stack">
+          <span>LangGraph</span><span>FastAPI</span><span>Redis</span><span>PostgreSQL</span>
+          <span>Groq</span><span>Streamlit</span><span>Docker</span><span>Cloud Run</span><span>LangSmith</span>
+        </div>
+      </article>
 
-      <hr>
-
-      <div class="experience-card">
-        <h3>Research Assistant – Convex Clustering</h3>
-        <p>
-          Implemented <strong>Linear Boosting algorithms</strong> for <strong>data clustering</strong> within the Mathematics Department at the 
-          <strong>University of los Andes</strong>. Achieved <strong>Silhouette Coefficient 0.5</strong> and <strong>BDI 1.25</strong>, 
-          comparable to classical methods such as <strong>KNN</strong> and <strong>SVM</strong>.
+      <!-- RAG Multi-Agent System -->
+      <article class="card card--featured">
+        <div class="card-header">
+          <div>
+            <p class="card-eyebrow">LangGraph · MongoDB · BERTopic · FastAPI · Streamlit</p>
+            <h3 class="card-title">Climate &amp; Energy Intelligence — RAG Multi-Agent System</h3>
+          </div>
+          <div class="card-links">
+            <a href="https://rag-multi-agent-system-qtfstwhfosn7qfntzr5fvg.streamlit.app" target="_blank" class="badge badge--live">Live Dashboard ↗</a>
+          </div>
+        </div>
+        <p class="card-desc">
+          <strong>Multilingual RAG pipeline</strong> (ES / EN / FR) with <strong>multi-agent analysis over climate and energy journalism</strong>.
+          Ingests 6 RSS sources through <strong>NLP enrichment with multilingual embeddings, BERTopic clustering, and LLM sentiment classification</strong>,
+          then feeds a 4-agent LangGraph system (Analytical → Contradiction → Trend → Synthesis) <strong>exposed via a live Streamlit dashboard with SSE streaming</strong>.
         </p>
-        <p><em>March 2025 – Present | Bogotá, Colombia</em></p>
-      </div>
+        <ul class="card-bullets">
+          <li><strong>BERTopic with UMAP and HDBSCAN over</strong> <code>paraphrase-multilingual-MiniLM-L12-v2</code> embeddings, <strong>cross-lingual clustering without per-language models</strong></li>
+          <li><strong>Atlas Vector Search semantic retrieval</strong>; Groq → Gemini fallback via single OpenAI-compatible client; <strong>Cohen's κ = 0.79 agreement on sentiment benchmark</strong></li>
+          <li><strong>Inter-system REST API</strong> (<code>/rag/search</code>, <code>/rag/topics/active</code>) with shared-secret auth; <strong>nightly GitHub Actions cron for ingestion and NLP</strong></li>
+        </ul>
+        <div class="card-stack">
+          <span>LangGraph</span><span>MongoDB Atlas</span><span>BERTopic</span><span>spaCy</span>
+          <span>HuggingFace</span><span>FastAPI</span><span>Prefect</span><span>Streamlit</span>
+        </div>
+      </article>
 
-      <hr>
+      <!-- Underwater Networks -->
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <p class="card-eyebrow">Julia · Numerical Modeling · Computational Physics</p>
+            <h3 class="card-title">Underwater Network Dynamics — Computational Simulation</h3>
+          </div>
+        </div>
+        <ul class="card-bullets">
+          <li><strong>Collection and analysis of data on over 500 high-consumption household</strong> appliances, identifying key energy efficiency trends.</li>
+          <li><strong>Designed and implemented a computational model in Julia</strong> that simulates underwater cable and sensor networks as
+          <strong>mass-spring systems</strong>, modeling network interactions as a function of seawater density and depth.
+          The framework supports the study of dynamic behavior and hydrodynamic effects relevant to climate monitoring infrastructure.</li>
+        </ul>
+        <div class="card-stack">
+          <span>Julia</span><span>Numerical Methods</span><span>Mass-Spring Systems</span><span>Computational Physics</span>
+        </div>
+      </article>
 
-      <div class="experience-card">
-        <h3>Research Assistant – Underwater Network Dynamics Project</h3>
-        <p>
-          Collaborated with the <strong>Austral University of Chile</strong> and the <strong>National University of Colombia</strong> on a 
-          <strong>computational model in Julia</strong> simulating underwater networks as <strong>mass-spring systems</strong>. 
-          Modeled network interactions based on <strong>density</strong> and <strong>depth</strong> to analyze dynamic behavior.
-        </p>
-        <p><em>September 2024 – February 2025 | Chile / Colombia</em></p>
-      </div>
+      <!-- ChatBot Armed Conflict -->
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <p class="card-eyebrow">Python · PyTorch · Keras · NLP</p>
+            <h3 class="card-title">ChatBot on Colombian Armed Conflict</h3>
+          </div>
+        </div>
+        <ul class="card-bullets">
+          <li><strong>Developed a ChatBot trained on 940 testimonies from the Colombian armed conflict</strong>.</li>
+          <li><strong>Designed and compared neural network architectures</strong> like SimpleRNN, LSTM, and GRU for <strong>language processing</strong>.</li>
+          <li>Applyed <strong>NLP pipelines and hyperparameter optimization</strong> to identify meaningful patterns across a sensitive corpus.</li>
+        </ul>
+        <div class="card-stack">
+          <span>Python</span><span>PyTorch</span><span>Keras</span><span>LSTM / GRU</span><span>NLP</span>
+        </div>
+      </article>
+
+      <!-- Sentiment Analysis -->
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <p class="card-eyebrow">Python · LDA · Topic Modeling</p>
+            <h3 class="card-title">Sentiment Analysis on Climate Change Discourse</h3>
+          </div>
+        </div>
+        <ul class="card-bullets">
+          <li>Analysis of a corpus of <strong>9050 tweets related to climate change</strong>, collected directly from <strong>X API.</strong></li>
+          <li>Conducted <strong>sentiment analysis</strong> identifying <strong>6 major topics</strong>, thanks to extensive <strong>model exploration and tuning hyperparameter search</strong>.</li>
+          <li>Assessed the extracted sentiments to <strong>highlight significant correlations</strong>, achieving <strong>r² values between 0.589 and 0.894</strong> across topic clusters.</li>
+        </ul>
+        <div class="card-stack">
+          <span>Python</span><span>LDA</span><span>Topic Modeling</span><span>Sentiment Analysis</span>
+        </div>
+      </article>
 
     </div>
   </section>
-  <div style="clear:both;"></div>
 
+  <!-- ── EDUCATION ──────────────────────────────────────────────── -->
+  <section id="education" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Education</h2>
 
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <p class="card-eyebrow">2026 – 2027 · Paris, France</p>
+            <h3 class="card-title">Sorbonne Université – Master MS2A (ex M2A)</h3>
+          </div>
+        </div>
+        <p class="card-desc">
+          Master in <strong>Statistics, Data Science and Artificial Intelligence</strong>. Major on <strong>mathematics and informatics</strong>.
+        </p>
+        <ul class="card-bullets">
+          <li>Statistical learning, large dimentional statistics, nonparametrics estimation</li>
+          <li>Deep learning, Large Language Models, Advanced Deep Learing.</li>
+        </ul>
+      </article>
 
-<section class="education" id="education">
-  <h2>Education</h2>
-  <div style="clear:both;"></div>
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <p class="card-eyebrow">2025 – Present · Paris, France</p>
+            <h3 class="card-title">Mines Paris – PSL, Diplôme d'Ingénieur</h3>
+          </div>
+        </div>
+        <p class="card-desc">Major in Applied Mathematics, Data &amp; Artificial Intelligence.</p>
+        <ul class="card-bullets">
+          <li> Athens Week: Intensive course <strong>"Hands on deep learning"</strong> from Telecom Paris.</li>
+        </ul>
+      </article>
 
-  <div id="education-container" class="education-container">
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <p class="card-eyebrow">2020 – Present · Bogotá, Colombia</p>
+            <h3 class="card-title">Universidad Nacional de Colombia, Bachelor's in Mathematics</h3>
+          </div>
+        </div>
+        <ul class="card-bullets">
+          <li>Top of Promotion.</li>
+          <li>Academic exchange in <strong>Mathematics and AI</strong> at University of los Andes.</li>
+          <li><strong>IBM IA</strong> Professional Certificate.</li>
+        </ul>
+      </article>
 
-    <div class="education-card">
-      <h3>Mines Paris – PSL</h3>
-      <p>
-        Pursuing a <strong>Msc in Engineering</strong> specializing in <strong>Mathematics and Artificial Intelligence</strong>.
-      </p>
-      <p><em>2025 – Present | Paris, France</em></p>
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <p class="card-eyebrow">2023 – 2024 · Bogotá, Colombia</p>
+            <h3 class="card-title">Universidad Nacional de Colombia, Certified programs in AI and Data Science</h3>
+          </div>
+        </div>
+        <ul class="card-bullets">
+          <li>Development of applications with <strong>Large Language Models</strong>.</li>
+          <li>Advanced <strong>Machine Learning</strong> and Data Science.</li>
+          <li>Machine Learning and <strong>Data Science</strong>.</li>
+          <li>Summer school in <strong>High Performance Computing for Big Data</strong> application.</li>
+        </ul>
+      </article>
+
     </div>
+  </section>
 
-    <hr>
+  <!-- ── SKILLS ─────────────────────────────────────────────────── -->
+  <section id="skills" class="section section--alt">
+    <div class="section-inner">
+      <h2 class="section-title">Skills</h2>
 
-    <div class="education-card">
-      <h3>Universidad Nacional de Colombia</h3>
-      <p>
-        <strong>Bachelor’s in Mathematics</strong> with a focus on <strong>applied mathematics and AI</strong>.
-      </p>
-      <p><em>2020 – 2025 | Bogotá, Colombia</em></p>
-    </div>
+      <div class="skills-grid">
 
-    <div class="education-card">
-      <div class="education-header">
-        <h3>Universidad Nacional de Colombia</h3>
+        <div class="skill-group">
+          <h4 class="skill-group-label">Machine Learning &amp; DL</h4>
+          <div class="skill-tags">
+            <span>PyTorch</span><span>Keras</span><span>scikit-learn</span>
+            <span>HuggingFace</span><span>BERTopic</span><span>UMAP</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-label">AI Agents &amp; LLMs</h4>
+          <div class="skill-tags">
+            <span>LangGraph</span><span>LangChain</span><span>LangSmith</span>
+            <span>Groq</span><span>Gemini</span><span>RAG</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-label">Data Engineering</h4>
+          <div class="skill-tags">
+            <span>Python</span><span>NumPy</span><span>SciPy</span>
+            <span>Pandas</span><span>spaCy</span><span>Julia</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-label">Databases</h4>
+          <div class="skill-tags">
+            <span>PostgreSQL</span><span>MongoDB</span><span>Redis</span>
+            <span>SQLAlchemy</span><span>Vector Search</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-label">APIs &amp; Streaming</h4>
+          <div class="skill-tags">
+            <span>FastAPI</span><span>REST</span><span>SSE</span>
+            <span>Pub/Sub</span><span>Streamlit</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-label">Deployment &amp; CI/CD</h4>
+          <div class="skill-tags">
+            <span>Docker</span><span>Cloud Run</span><span>GitHub Actions</span>
+            <span>MLflow</span><span>Prefect</span><span>AWS S3</span>
+          </div>
+        </div>
+
       </div>
-      <p><em>2023, 2024 | Bogotá, Colombia</em></p>
-      <p><strong>Certified programs in AI and Data Science</strong></p>
-      <ul class="education-list">
-        <li>Developing applications with <strong>Large Language Models</strong></li>
-        <li>Advanced <strong>Machine Learning</strong> and Data Science</li>
-        <li><strong>Machine Learning</strong> and Data Science</li>
-        <li>Summer school in <strong>High Performance Computing</strong> for <strong>Big Data</strong> applications</li>
-      </ul>
     </div>
+  </section>
 
-    <hr>
+  <!-- ── CONTACT ────────────────────────────────────────────────── -->
+  <section id="contact" class="section">
+    <div class="section-inner section-inner--narrow">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-sub">Open to internship and research opportunities in data &amp; AI — France and internationally.</p>
 
+      <form id="contact-form" class="contact-form" onsubmit="sendEmail(event)">
+        <div class="form-row">
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+          <input type="email" id="email" name="email" placeholder="Your email" required />
+        </div>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required />
+        <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Juan Nicolás Mendoza Roncancio</span>
+      <div class="footer-links">
+        <a href="mailto:juannicolasmendoza4@gmail.com">Email</a>
+        <a href="https://github.com/JuanNicolasMendozaRoncancio" target="_blank">GitHub</a>
+        <a href="CVs/CV_JuanNicolasMendozaRoncancioEN.pdf" download>Download CV</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <a href="#about" class="scroll-top" aria-label="Back to top">↑</a>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <p>Message sent — thank you!</p>
+    <button onclick="showPopup(false)">Close</button>
   </div>
-</section>
-<div style="clear:both;"></div>
 
-
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div style="clear:both;"></div>
-
-      <div class="all_skills">
-        <div class="skill">
-          <img src="html_finalprojimages/Python.png"/>
-          <h6>Python</h6>
-          <p>4 years experience</p>
-        </div>  
-
-        <div class="skill">
-          <img src="html_finalprojimages/Pytorch.png"/>
-          <h6>PyTorch</h6>
-          <p>3 years experience</p>
-        </div>  
-        
-        <div class="skill">
-          <img src="html_finalprojimages/Hugging Face.png"/>
-          <h6>Hugging Face</h6>
-          <p>2 years experience</p>
-        </div>
-
-        <div class="skill">
-          <img src="html_finalprojimages/SQL.png"/>
-          <h6>SQL</h6>
-          <p>3 years experience</p>
-        </div>
-
-        <!-- <div class="skill">
-          <img src="html_finalprojimages/node.png"/>
-          <h6>Node.js</h6>
-          <p>3 years experience</p>
-        </div> -->
-
-
-    </section>
-    
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <div style="clear:both;"></div>
-
-      <div class="flex_center">
-        <form id="contact-form" onsubmit="sendEmail(event)">
-          <fieldset>
-            <legend class="introduction">Get in Touch</legend>
-
-            <input type="text" id="name" name="name" placeholder="Your Name" required><br/>
-            <input type="email" id="email" name="email" placeholder="Your Email" required><br/>
-            <input type="text" id="subject" name="subject" placeholder="Subject" required><br/>
-            <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
-
-            <div class="flex_center">
-              <button type="submit" id="contact_btn">Send Message</button>
-            </div>
-          </fieldset>
-        </form>
-      </div>
-    </section>
-
-    <!-- Scroll to Top Button -->
-    <div class="iconbutton">
-      <a href="#home">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      </a>
-    </div>
-
-    <!-- Popup -->
-    <div class="popup" id="popup">
-      <img src="html_finalprojimages/checkmark--outline.svg"/>
-      <h3>Thank you for contacting me!</h3>
-      <button onclick="showPopup(false)">Ok</button>
-    </div>
-
-
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
